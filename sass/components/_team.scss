@@ -1,22 +1,22 @@
-.teams {
+.team {
     background-color: $section-team-bgcolor;
 }
-.teams__list {
+.team__list {
     display: flex;
 }
-.teams__item:not(:last-child) {
+.team__item:not(:last-child) {
     margin-right: 30px;
 }
-.teams__list .teams__item {
+.team__list .team__item {
     background-color: $primary-white-color;
 }
-.teams__item {
+.team__item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-.teams__list .teams__title {
+.team__list .team__title {
     font-size: 16px;
     font-weight: 500;
     line-height: calc(19 / 16);
@@ -25,7 +25,7 @@
     margin-top: 30px;
     margin-bottom: 0;
 }
-.teams__list .teams__text {
+.team__list .team__text {
     color: $title-text-color;
     font-size: 16px;
     font-weight: 400;
@@ -34,16 +34,16 @@
     text-align: center;
     margin-top: 10px;
 }
-.social-container {
+.team-social__container {
     margin: 16px 32px 30px;
 }
-.social-container__list {
+.team-social__container-list {
     display: flex;
 }
-.social-container__item:not(:last-child) {
+.team-social__container-item:not(:last-child) {
     margin-right: 10px;
 }
-.social-container__link {
+.team-social__container-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +57,7 @@
         background-color: $accent-color;
         color: $primary-white-color;}
 }
-.social-container__icon {
+.team-social__container-icon {
     fill: currentColor;
 }
 

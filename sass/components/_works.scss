@@ -1,19 +1,19 @@
 .works {
-    padding-bottom: 94px;
+    padding-top: 0;
 }
-.works-list {
+.works__list {
     display: flex;
 }
-.works-list__item:not(:last-child) {
+.works__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.works-list__thumb {
+.works__thumb {
     position: relative;
     display: flex;
 }
 
-.works-list__text {
+.works__text {
     position: absolute;
     background-color: $works-list-text-color;
     color: $primary-white-color;

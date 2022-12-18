@@ -1,31 +1,15 @@
 .header {
     border-bottom: 1px solid $border-color;
 }
-
-.navigation__list {
+.header-navigation__list {
     display: flex;
     margin-left: 93px;
-    & .navigation__item:not(:last-child) {
-            margin-right: 50px;}
-    & .navigation__link {
-            display: block;
-            color: $primary-text-color;
-            font-size: 14px;
-            font-weight: 500;
-            line-height: calc(16 / 14);
-            letter-spacing: 0.02em;
-            text-decoration: none;
-            padding-top: 32px;
-            padding-bottom: 32px;
-            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
-    & .navigation__link:hover,
-    & .navigation__link:focus {
-        color: $accent-color;}
-    & .navigation__link.current {
-    color: $accent-color;}
 }
-.navigation__item {
+.header-navigation__item {
     position: relative;
+}
+.header-navigation__item:not(:last-child) {
+    margin-right: 50px;
 }
 .current::after {
     position: absolute;
@@ -37,14 +21,32 @@
     background-color: $accent-color;
     border-radius: 2px;
 }
-.contact__list {
+.header-navigation__link {
+    display: block;
+    color: $primary-text-color;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: $accent-color;}
+}
+.header-navigation__link.current {
+    color: $accent-color;
+}
+.header-contact__list {
     display: flex;
     margin-left: auto;
     align-items: center;
 }
-.contact__list .contact__item+.contact__item {
+.header-contact__list .header-contact__item+.header-contact__item {
     margin-left: 50px;}
-.contact__mail {
+.header-contact__mail {
     display: inline-flex;
     color: $title-text-color;
     font-size: 14px;
@@ -59,11 +61,12 @@
     &:hover,
     &:focus {
         color: $accent-color;}
-    &-icon {
-        margin-right: 10px;
-        fill: currentColor;}
 }
-.contact__tel {
+.header-contact__mail-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+.header-contact__tel {
     display: inline-flex;
     color: $title-text-color;
     font-size: 14px;
@@ -78,8 +81,9 @@
         &:link:hover,
         &:link:focus {
             color: $accent-color;}
-        &-icon {
-            margin-right: 10px;
-            fill: currentColor;}
+}
+.header-contact__tel-icon {
+    margin-right: 10px;
+    fill: currentColor;
 }
 

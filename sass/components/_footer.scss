@@ -6,7 +6,7 @@
 .footer-logo-address {
     margin-right: 70px;
 }
-.address-list .address-list__maps {
+.footer-address__list .footer-address__maps {
     color: $primary-white-color;
     font-size: 14px;
     font-weight: 400;
@@ -16,15 +16,15 @@
     font-style: normal;
     margin-top: 28px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &.address-list__maps:hover,
-    &.address-list__maps:focus {
+    &.footer-address__maps:hover,
+    &.footer-address__maps:focus {
         color: $accent-color;
     }
 }
-.address-list__item .address-list__maps {
+.footer-address__item .footer-address__maps {
     display: inline-block;
 }
-.address-list .address-list__mail {
+.footer-address__list .footer-address__mail {
     color: $fotter-contact-color;
     font-size: 14px;
     font-weight: 400;
@@ -34,16 +34,16 @@
     font-style: normal;
     margin-top: 12px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &.address-list__mail:hover,
-    &.address-list__mail:focus {
+    &.footer-address__mail:hover,
+    &.footer-address__mail:focus {
         color: $accent-color;
     }
 }
-.address-list__item .address-list__mail {
+.footer-address__item .footer-address__mail {
     display: inline-block;
     padding: 0;
 }
-.address-list .address-list__tel {
+.footer-address__list .footer-address__tel {
     color: $fotter-contact-color;
     font-size: 14px;
     font-weight: 400;
@@ -53,12 +53,12 @@
     font-style: normal;
     margin-top: 12px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &.address-list__tel:hover,
-    &.address-list__tel:focus {
+    &.footer-address__tel:hover,
+    &.footer-address__tel:focus {
         color: $accent-color;
     }
 }
-.address-list__item .address-list__tel {
+.footer-address__item .footer-address__tel {
     display: inline-block;
     padding: 0;
 }
